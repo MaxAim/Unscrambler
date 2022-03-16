@@ -31,6 +31,22 @@
         <div class='squares' style="background-position: -1056px -1024px;"></div>
         <div class='squares' style="background-position: -1056px -1536px;"></div>
     </div>
+    <img src="./2.jpeg" alt="" style="display: none;">
+    <img src="./3.jpeg" alt="" style="display: none;">
+    <img src="./4.jpeg" alt="" style="display: none;">
+    <img src="./5.jpeg" alt="" style="display: none;">
+    <img src="./6.jpeg" alt="" style="display: none;">
+    <img src="./7.jpeg" alt="" style="display: none;">
+    <img src="./8.jpeg" alt="" style="display: none;">
+    <img src="./9.jpeg" alt="" style="display: none;">
+    <img src="./10.jpeg" alt="" style="display: none;">
+    <img src="./11.jpeg" alt="" style="display: none;">
+    <img src="./12.jpeg" alt="" style="display: none;">
+    <img src="./13.jpeg" alt="" style="display: none;">
+    <img src="./14.jpeg" alt="" style="display: none;">
+    <img src="./15.jpeg" alt="" style="display: none;">
+    <img src="./16.jpeg" alt="" style="display: none;">
+    <img src="./17.jpeg" alt="" style="display: none;">
 </body>
 <style>
     .squares{
@@ -56,5 +72,18 @@
         }
     }
     document.addEventListener('click', next); 
+    window.addEventListener('keydown', function(event) {
+        switch(event.key){
+            case "ArrowLeft": 
+                event.preventDefault()
+                next({clientX: 0})
+                break;
+            case "ArrowRight": 
+                event.preventDefault()
+                next({clientX: 999})
+                break;
+        }
+    });
+
 </script>
 </html>
